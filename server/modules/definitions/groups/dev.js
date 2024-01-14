@@ -22,8 +22,11 @@ Class.menu = {
     TURRETS: [],
     GUNS: [
         {
-            /*** LENGTH    WIDTH     ASPECT        X             Y         ANGLE     DELAY */
-            POSITION: [18, 10, -1.4, 0, 0, 0, 0],
+            POSITION: {
+                LENGTH: 18,
+                WIDTH: 10,
+                ASPECT: -1.4
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic]),
                 TYPE: "bullet",
@@ -63,8 +66,11 @@ Class.developer = {
     ],
     GUNS: [
         {
-            /*** LENGTH WIDTH     ASPECT        X             Y         ANGLE     DELAY */
-            POSITION: [18, 10, -1.4, 0, 0, 0, 0],
+            POSITION: {
+                LENGTH: 18,
+                WIDTH: 10,
+                ASPECT: -1.4
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.op]),
                 TYPE: "developerBullet",

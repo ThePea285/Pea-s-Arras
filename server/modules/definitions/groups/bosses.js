@@ -27,14 +27,78 @@ Class.minibossBase = {
     BODY: { PUSHABILITY: 0.05 }
 }
 Class.miniboss = {
-    PARENT: ["minibossBase"],
+    PARENT: "minibossBase",
     CONTROLLERS: ["nearestDifferentMaster", "minion", "canRepel"],
     AI: { NO_LEAD: true },
 };
 Class.ramMiniboss = {
-    PARENT: ["minibossBase"],
+    PARENT: "minibossBase",
     CONTROLLERS: ["nearestDifferentMaster", "canRepel", "mapTargetToGoal"],
 };
+
+// Missiles
+Class.hypermissile = {
+    PARENT: "missile",
+    GUNS: [
+        {
+            POSITION: {
+                LENGTH: 14,
+                WIDTH: 6,
+                Y: -2,
+                ANGLE: 150,
+            },
+            PROPERTIES: {
+                AUTOFIRE: true,
+                SHOOT_SETTINGS: combineStats([g.basic, {reload: 3}]),
+                TYPE: [ "bullet", { PERSISTS_AFTER_DEATH: true } ],
+                STAT_CALCULATOR: gunCalcNames.thruster,
+            },
+        },
+        {
+            POSITION: {
+                LENGTH: 14,
+                WIDTH: 6,
+                Y: 2,
+                ANGLE: 210,
+            },
+            PROPERTIES: {
+                AUTOFIRE: true,
+                SHOOT_SETTINGS: combineStats([g.basic, {reload: 3}]),
+                TYPE: [ "bullet", { PERSISTS_AFTER_DEATH: true } ],
+                STAT_CALCULATOR: gunCalcNames.thruster,
+            },
+        },
+        {
+            POSITION: {
+                LENGTH: 14,
+                WIDTH: 6,
+                Y: -2,
+                ANGLE: 90,
+                DELAY: 0.5,
+            },
+            PROPERTIES: {
+                AUTOFIRE: true,
+                SHOOT_SETTINGS: combineStats([g.basic, {reload: 3}]),
+                TYPE: [ "bullet", { PERSISTS_AFTER_DEATH: true } ],
+            },
+        },
+        {
+            POSITION: {
+                LENGTH: 14,
+                WIDTH: 6,
+                Y: 2,
+                ANGLE: 270,
+                DELAY: 0.5,
+            },
+            PROPERTIES: {
+                AUTOFIRE: true,
+                AUTOFIRE: true,
+                SHOOT_SETTINGS: combineStats([g.basic, {reload: 3}]),
+                TYPE: [ "bullet", { PERSISTS_AFTER_DEATH: true } ],
+            },
+        },
+    ],
+}
 
 // GUNS
 Class.baseTrapTurret = {
