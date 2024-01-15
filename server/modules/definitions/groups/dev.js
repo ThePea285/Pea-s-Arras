@@ -1,11 +1,10 @@
-const { combineStats, addAura, makeDeco } = require('../facilitators.js');
+const { combineStats, addAura, makeDeco, menu } = require('../facilitators.js');
 const { base, gunCalcNames, basePolygonDamage, basePolygonHealth, dfltskl, statnames } = require('../constants.js');
 const g = require('../gunvals.js');
 
 // Menus
 Class.menu = {
-    PARENT: ["genericTank"],
-    LABEL: "",
+    PARENT: "genericTank",
     SKILL_CAP: [
         dfltskl,
         dfltskl,
@@ -33,9 +32,9 @@ Class.menu = {
             },
         },
     ],
-};
+}
 Class.developer = {
-    PARENT: ["menu"],
+    PARENT: "menu",
     LABEL: "Developer",
     BODY: {
         SHIELD: 1000,
@@ -77,9 +76,9 @@ Class.developer = {
             },
         },
     ],
-};
+}
 Class.spectator = {
-    PARENT: ["menu"],
+    PARENT: "menu",
     LABEL: "Spectator",
     ALPHA: 0,
     CAN_BE_ON_LEADERBOARD: false,
@@ -99,10 +98,7 @@ Class.spectator = {
     GUNS: [],
 };
 
-Class.bosses = {
-    PARENT: ["menu"],
-    LABEL: "Bosses",
-};
+Class.bosses = menu("Bosses")
 Class.sentries = {
     PARENT: ["menu"],
     LABEL: "Sentries",

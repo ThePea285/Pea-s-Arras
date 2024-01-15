@@ -1237,7 +1237,13 @@ Class.spreadshot = {
     DANGER: 7,
     GUNS: [
         {
-            POSITION: [13, 4, 1, 0, -0.5, -75, 5 / 6],
+            POSITION: {
+                LENGTH: 13,
+                WIDTH: 4,
+                Y: -0.5,
+                ANGLE: -75,
+                DELAY: 5/6
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.pelleter, g.artillery, g.twin, g.spreadshot]),
                 TYPE: "bullet",
@@ -1245,7 +1251,13 @@ Class.spreadshot = {
             }
         },
         {
-            POSITION: [13, 4, 1, 0, 0.5, 75, 5 / 6],
+            POSITION: {
+                LENGTH: 13,
+                WIDTH: 4,
+                Y: 0.5,
+                ANGLE: 75,
+                DELAY: 5/6
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.pelleter, g.artillery, g.twin, g.spreadshot]),
                 TYPE: "bullet",
@@ -1253,7 +1265,13 @@ Class.spreadshot = {
             }
         },
         {
-            POSITION: [14.5, 4, 1, 0, -0.5, -60, 4 / 6],
+            POSITION: {
+                LENGTH: 14.5,
+                WIDTH: 4,
+                Y: -0.5,
+                ANGLE: -60,
+                DELAY: 4/6
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.pelleter, g.artillery, g.twin, g.spreadshot]),
                 TYPE: "bullet",
@@ -1261,7 +1279,13 @@ Class.spreadshot = {
             }
         },
         {
-            POSITION: [14.5, 4, 1, 0, 0.5, 60, 4 / 6],
+            POSITION: {
+                LENGTH: 14.5,
+                WIDTH: 4,
+                Y: 0.5,
+                ANGLE: 60,
+                DELAY: 4/6
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.pelleter, g.artillery, g.twin, g.spreadshot]),
                 TYPE: "bullet",
@@ -1269,7 +1293,13 @@ Class.spreadshot = {
             }
         },
         {
-            POSITION: [16, 4, 1, 0, -0.5, -45, 3 / 6],
+            POSITION: {
+                LENGTH: 16,
+                WIDTH: 4,
+                Y: -0.5,
+                ANGLE: -45,
+                DELAY: 3/6
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.pelleter, g.artillery, g.twin, g.spreadshot]),
                 TYPE: "bullet",
@@ -1277,7 +1307,13 @@ Class.spreadshot = {
             }
         },
         {
-            POSITION: [16, 4, 1, 0, 0.5, 45, 3 / 6],
+            POSITION: {
+                LENGTH: 16,
+                WIDTH: 4,
+                Y: 0.5,
+                ANGLE: 45,
+                DELAY: 3/6
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.pelleter, g.artillery, g.twin, g.spreadshot]),
                 TYPE: "bullet",
@@ -1285,7 +1321,13 @@ Class.spreadshot = {
             }
         },
         {
-            POSITION: [17.5, 4, 1, 0, -0.5, -30, 2 / 6],
+            POSITION: {
+                LENGTH: 17.5,
+                WIDTH: 4,
+                Y: -0.5,
+                ANGLE: -30,
+                DELAY: 2/6
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.pelleter, g.artillery, g.twin, g.spreadshot]),
                 TYPE: "bullet",
@@ -1293,7 +1335,13 @@ Class.spreadshot = {
             }
         },
         {
-            POSITION: [17.5, 4, 1, 0, 0.5, 30, 2 / 6],
+            POSITION: {
+                LENGTH: 17.5,
+                WIDTH: 4,
+                Y: 0.5,
+                ANGLE: 30,
+                DELAY: 2/6
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.pelleter, g.artillery, g.twin, g.spreadshot]),
                 TYPE: "bullet",
@@ -1301,7 +1349,13 @@ Class.spreadshot = {
             }
         },
         {
-            POSITION: [19, 4, 1, 0, -1, -15, 1 / 6],
+            POSITION: {
+                LENGTH: 19,
+                WIDTH: 4,
+                Y: -1,
+                ANGLE: -15,
+                DELAY: 1/6
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.pelleter, g.artillery, g.twin, g.spreadshot]),
                 TYPE: "bullet",
@@ -1309,7 +1363,13 @@ Class.spreadshot = {
             }
         },
         {
-            POSITION: [19, 4, 1, 0, 1, 15, 1 / 6],
+            POSITION: {
+                LENGTH: 19,
+                WIDTH: 4,
+                Y: 1,
+                ANGLE: 15,
+                DELAY: 1/6
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.pelleter, g.artillery, g.twin, g.spreadshot]),
                 TYPE: "bullet",
@@ -1584,21 +1644,32 @@ Class.predator = {
     TOOLTIP: "Hold right click to zoom.",
     GUNS: [
         {
-            POSITION: [24, 8, 1, 0, 0, 0, 0],
+            POSITION: {
+                LENGTH: 24,
+                WIDTH: 8
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.hunter, g.hunterSecondary, g.hunterSecondary, g.predator]),
                 TYPE: "bullet"
             }
         },
         {
-            POSITION: [21, 12, 1, 0, 0, 0, 0.15],
+            POSITION: {
+                LENGTH: 21,
+                WIDTH: 12,
+                DELAY: 0.15
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.hunter, g.hunterSecondary, g.predator]),
                 TYPE: "bullet"
             }
         },
         {
-            POSITION: [18, 16, 1, 0, 0, 0, 0.3],
+            POSITION: {
+                LENGTH: 18,
+                WIDTH: 16,
+                DELAY: 0.3
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.hunter, g.predator]),
                 TYPE: "bullet"
@@ -1618,21 +1689,33 @@ Class.xHunter = {
     TOOLTIP: "Hold right click to zoom.",
     GUNS: [
         {
-            POSITION: [24, 8, 1, 0, 0, 0, 0],
+            POSITION: {
+                LENGTH: 24,
+                WIDTH: 8
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.hunter, g.hunterSecondary]),
                 TYPE: "bullet"
             }
         },
         {
-            POSITION: [21, 12, 1, 0, 0, 0, 0.25],
+            POSITION: {
+                LENGTH: 21,
+                WIDTH: 12,
+                DELAY: 0.25
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.hunter]),
                 TYPE: "bullet"
             }
         },
         {
-            POSITION: [5, 12, -1.2, 7, 0, 0, 0]
+            POSITION: {
+                LENGTH: 5,
+                WIDTH: 12,
+                ASPECT: -1.2,
+                X: 7
+            }
         }
     ]
 }
@@ -1647,7 +1730,11 @@ Class.dual = {
     TOOLTIP: "Hold right click to zoom.",
     GUNS: [
         {
-            POSITION: [18, 7, 1, 0, 5.5, 0, 0],
+            POSITION: {
+                LENGTH: 18,
+                WIDTH: 7,
+                Y: 5.5
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.twin, g.dual, g.lowPower]),
                 TYPE: "bullet",
@@ -1655,7 +1742,12 @@ Class.dual = {
             }
         },
         {
-            POSITION: [18, 7, 1, 0, -5.5, 0, .5],
+            POSITION: {
+                LENGTH: 18,
+                WIDTH: 7,
+                Y: -5.5,
+                DELAY: 0.5
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.twin, g.dual, g.lowPower]),
                 TYPE: "bullet",
@@ -1663,14 +1755,24 @@ Class.dual = {
             }
         },
         {
-            POSITION: [16, 8.5, 1, 0, 5.5, 0, 0.25],
+            POSITION: {
+                LENGTH: 16,
+                WIDTH: 8.5,
+                Y: 5.5,
+                DELAY: 0.25
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.twin, g.dual]),
                 TYPE: "bullet"
             }
         },
         {
-            POSITION: [16, 8.5, 1, 0, -5.5, 0, .75],
+            POSITION: {
+                LENGTH: 16,
+                WIDTH: 8.5,
+                Y: -5.5,
+                DELAY: 0.75
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.twin, g.dual]),
                 TYPE: "bullet"
@@ -1689,17 +1791,29 @@ Class.musket = {
     },
     GUNS: [
         {
-            POSITION: [16, 19, 1, 0, 0, 0, 0],
+            POSITION: {
+                LENGTH: 16,
+                WIDTH: 19
+            },
         },
         {
-            POSITION: [18, 7, 1, 0, 4, 0, 0],
+            POSITION: {
+                LENGTH: 18,
+                WIDTH: 7,
+                Y: 4
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.rifle, g.twin]),
                 TYPE: "bullet"
             }
         },
         {
-            POSITION: [18, 7, 1, 0, -4, 0, 0.5],
+            POSITION: {
+                LENGTH: 18,
+                WIDTH: 7,
+                Y: -4,
+                DELAY: 0.5
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.rifle, g.twin]),
                 TYPE: "bullet"
@@ -1716,7 +1830,13 @@ Class.crossbow = {
     },
     GUNS: [
         {
-            POSITION: [12.5, 2.5, 1, 0, 3.5, 35, 1],
+            POSITION: {
+                LENGTH: 12,
+                WIDTH: 2.5,
+                Y: 3.5,
+                ANGLE: 35,
+                DELAY: 1
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.rifle, g.crossbow, { recoil: 0.5 }]),
                 TYPE: "bullet"
@@ -1758,7 +1878,10 @@ Class.crossbow = {
             }
         },
         {
-            POSITION: [24, 7, 1, 0, 0, 0, 0],
+            POSITION: {
+                LENGTH: 24,
+                WIDTH: 7
+            },
             PROPERTIES: {
                 SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.rifle, g.crossbow, { speed: 0.7, maxSpeed: 0.7 }, { recoil: 0.5 }]),
                 TYPE: "bullet"
